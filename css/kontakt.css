@@ -1,0 +1,752 @@
+/*POCETNA*/
+html, body{
+	margin:0px;
+	padding:0px;
+	height: 100%;
+	background-color: #fff;
+}
+/*WRAP*/
+#wrap{
+	width: 100%;
+	margin: 0 auto;
+	min-height:100%;
+	position:relative;
+}
+
+/*HEADER*/
+#header{
+	/*background-color: #003182;*/
+	background-color: #022140;
+	height: 130px;
+	width: 100%:
+}
+
+/*HEADER LOGO*/
+.headerLOGO{
+	max-width: 75em;
+	float:left;
+	text-align: center;
+	height: 130px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.logoimg{
+	margin-top: 20px;
+	margin-left: 30px;
+	height: auto;
+	max-height: 90px;
+	float: left;
+	filter: invert(1);
+} 
+.textHeader{
+	color:  #ffffff;
+	float: right;
+}
+.textHeader table{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #dddddd; 
+	border: 0px solid #dddddd;
+	margin: 0px;
+	padding-top: 33px;
+	height: 20px;
+	width: 200px;
+	text-align: left;
+}
+/*HEADER DESNO*/
+.headerdesno{
+	float: right;
+	color: #ffffff;
+	margin-top: 40px;
+	margin-right: 25px;
+}
+
+.headerdesno th{
+	padding-right: 15px;
+}
+.headerdesno td{
+	text-align: center;
+}
+.glyphicon.glyphicon-shopping-cart{
+	font-size: 25px;
+}
+
+/*MAIN*/
+#main{
+	padding-bottom:80px;
+	margin-top: 40px;
+	margin-left: auto;
+    margin-right: auto;
+	margin-bottom:1px;
+	overflow: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*PRIKAZ ZA MOBILNE UREĐAJE*/
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px)  and (max-width : 980px) {
+
+	#container{
+		width:95%;	
+	}
+	
+	.headerLOGO img{
+		margin:auto;
+		margin-top: 10px;
+		margin-left: 8px;
+		text-align: center;
+		display:block;
+		width:65%;	
+	}
+	.headerLOGO .main-nav{
+		height:40px;
+		border-radius:5px;
+		border:#c13046 1px solid;
+		transition: height 1s; /* animation */
+	}
+	
+	#content{
+		overflow:auto;
+		width:100%;
+		float:none;
+		transition: width 1s; /* animation */
+	}
+
+	#sidebar{
+		width:100%;
+		float:none;
+	}
+	
+	#sidebar .block{
+		margin-left:0;
+	}
+
+}
+
+/* Small Tablets (portrait and landscape) ----------- */
+@media only screen and (min-width : 569px) and (max-width : 767px) {
+	
+	#container{
+		width:95%;
+	}
+	
+	.headerLOGO img{
+		margin:auto;
+		margin-left: 8px;
+		margin-top: 10px;
+		display:block;
+		width:65%;
+	}
+	
+	.headerLOGO .main-nav{
+		height:auto;
+		border-radius:5px;
+		border:#c13046 1px solid;
+		display:block;
+		overflow:hidden;
+		width:99%;
+		transition: width 1s; /* animation */	
+	}
+
+	.headerLOGO .main-nav ul{
+		padding:2% 1%;
+		text-align:center;
+		width:98%;
+	}
+
+	.headerLOGO .main-nav li{
+		float:none;
+		display:block;
+		margin-right:0px;
+		width:100%;
+		border-bottom:solid #a3293b 1px;
+	}
+
+	.headerLOGO .main-nav li a{
+		margin-bottom:2px;
+		text-align:center;
+	}
+	
+	.headerLOGO .main-nav li a:hover,.headerLOGO .main-nav li a.active{
+		display:block;
+	}
+	
+	#content{
+		overflow:auto;
+		width:99%;
+		float:none;
+	}
+	
+
+	#sidebar{
+		width:100%;
+		float:none;
+	}
+	
+	#sidebar .block{
+		margin-left:0;
+	}
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 240px) and (max-width : 568px) {
+	#container{
+		width:95%;
+	}
+	
+	.headerLOGO img{
+		margin:auto;
+		margin-left: 8px;
+		margin-top: 10px;
+		display:block;
+		width:95%;
+		
+	}
+	
+	.headerLOGO .main-nav{
+		height:auto;
+		border-radius:5px;
+		border:#c13046 1px solid;
+		display:block;
+		overflow:hidden;
+		width:99%
+	}
+
+	.headerLOGO .main-nav ul{
+		padding:2% 1%;
+		text-align:center;
+		width:98%;
+	}
+
+	.headerLOGO .main-nav li{
+		float:none;
+		display:block;
+		margin-right:0px;
+		width:100%;
+		border-bottom:solid #a3293b 1px;
+	}
+
+	.headerLOGO .main-nav li a{
+		margin-bottom:2px;
+		text-align:center;
+	}
+	
+	.headerLOGO .main-nav li a:hover,.headerLOGO .main-nav li a.active{
+		display:block;
+	}
+	
+	#content{
+		overflow:auto;
+		width:100%;
+		float:none;
+	}
+	
+	#content a.readmore{
+		display:block;
+		float:none;
+		border-radius:5px;
+		text-align:center;
+	}
+
+	#sidebar{
+		width:100%;
+		float:none;
+	}
+	
+	#sidebar .block{
+		margin-left:0;
+	}
+}
+
+/*SLIDESHOW*/
+.fling-minislide img{ 
+	position:absolute; 
+	animation:fling-minislide 20s infinite; 
+	opacity:0; 
+	width: 100%;
+	margin-left: auto;
+    margin-right: auto;
+	z-index: 0;
+}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}} 
+.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:5s;}
+.fling-minislide img:nth-child(2){animation-delay:10s;}
+.fling-minislide img:nth-child(1){animation-delay:15s;}
+
+/*O NAMA*/
+#mainOnama{
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom:80px;
+	margin-top: 40px;
+	margin-left: 5%;
+	margin-bottom:1px;
+	min-height: 300px;
+}
+#mainText{
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom:80px;
+	margin-top: 40px;
+	margin-left: 5%;
+	margin-bottom:1px;
+	min-height: 300px;
+}
+
+#mainOnama h1{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    float: left;
+	text-transform: uppercase;
+}
+.mainInsideText{
+	margin-top: 20px;
+	margin-left: 30px;
+	float: left;
+}
+
+/*KONTAKT*/
+#mainKontakt{
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom:80px;
+	margin-top: 40px;
+	margin-left: 5%;
+	margin-bottom:1px;
+	min-height: 300px;
+}
+
+#mainKontakt h1{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    float: left;
+	text-transform: uppercase;
+}
+
+#mainKontakt h2,h3 {
+	margin:0 0 35px 0;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing:1px;
+}
+
+#mainKontakt p{
+	margin:0 0 25px;
+	font-size:18px;
+	line-height:1.6em;
+}
+#mainKontakt a{
+	color:#f2f2f2;
+}
+#mainKontakt a:hover,a:focus{
+	text-decoration:none;
+	color:#26a5d3;
+}
+
+#contact{
+	background:#333333;
+	color:#f4f4f4;
+	padding-bottom:80px;
+}
+
+#mainKontakt textarea.form-control{
+    height:100px;
+}
+
+
+
+
+
+
+
+
+/*GALERIJA*/
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+	font-weight: bold;
+}
+
+#mainDugemajice{
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom:80px;
+	margin-top: 40px;
+	margin-left: 5%;
+	margin-bottom:1px;
+	min-height: 300px;
+}
+#mainDugemajice h1{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    float: left;
+	text-transform: uppercase;
+}
+
+
+#mainKratkemajice{
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom:80px;
+	margin-top: 40px;
+	margin-left: 5%;
+	margin-bottom:1px;
+	min-height: 300px;
+}
+
+#mainKratkemajice h1{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    float: left;
+	text-transform: uppercase;
+}
+
+#mainSalice{
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom:80px;
+	margin-top: 40px;
+	margin-left: 5%;
+	margin-bottom:1px;
+	min-height: 300px;
+}
+#mainSalice h1{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    float: left;
+	text-transform: uppercase;
+}
+ 
+ 
+/*PROIZVOD*/
+#container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+}
+/* Columns */
+.left-column {
+  width: 50%;
+  position: relative;
+}
+ 
+.right-column {
+  width: 50%;
+  margin-top: 1px;
+  margin-left: 20px;
+}
+/* Left Column */
+
+ 
+/* Product Description */
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+.product-description span {
+  font-size: 13px;
+  color: #358ED7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.product-description span a{
+  text-decoration: none;
+}
+
+.product-description h1 {
+  font-weight: 300;
+  font-size: 52px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
+}
+/* Product Quantity */
+.product-quantity {
+  margin-bottom: 15px;
+}
+
+.product-quantity a {
+  color: #358ED7;
+  text-decoration: none;
+  font-size: 12px;
+  position: relative;
+  margin: 10px 0;
+  display: inline-block;
+}
+.product-quantity a:before {
+  content: &quot;?&quot;;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid rgba(53, 142, 215, 0.5);
+  display: inline-block;
+  text-align: center;
+  line-height: 16px;
+  opacity: 0.5;
+  margin-right: 5px;
+}
+/* Product Price */
+.product-price {
+  display: flex;
+  align-items: center;
+}
+ 
+.product-price span {
+  font-size: 26px;
+  font-weight: 300;
+  color: #43474D;
+  margin-right: 20px;
+}
+ 
+.cart-btn {
+  display: inline-block;
+  background-color: #022140;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: all .5s;
+}
+.cart-btn:hover {
+  background-color: #0075ea;
+  color: black;
+}
+/* Responsive */
+@media (max-width: 940px) {
+  .container {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+ 
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+ 
+  .left-column img {
+    width: 300px;
+    right: 0;
+    top: -65px;
+    left: initial;
+  }
+}
+ 
+@media (max-width: 535px) {
+  .left-column img {
+    width: 220px;
+    top: -85px;
+  }
+}
+
+
+/*REGISTRACIJA*/
+/*
+* {box-sizing: border-box}
+*/
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+#mainRegistracija h1{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    float: left;
+	text-transform: uppercase;
+}
+
+
+/*NAPLATA*/
+
+#mainNaplata h1{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    float: left;
+	text-transform: uppercase;
+}
+
+#mainNaplata .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+#mainNaplata .col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+#mainNaplata .col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+#mainNaplata .col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+#mainNaplata .container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+#mainNaplata input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#mainNaplata label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+#mainNaplata .icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+#mainNaplata .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+#mainNaplata .btn:hover {
+  background-color: #45a049;
+}
+
+#mainNaplata span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  #mainNaplata .row {
+    flex-direction: column-reverse;
+  }
+  #mainNaplata .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+/*FOOTER*/
+
+.foot {
+	background-color: #022140;
+	color: white;
+	height: 60px;
+	margin-top: 30px;
+	padding-top: 20px;
+	letter-spacing: 3px; /*razmak između slova*/
+	line-height: 1.8; /*prored*/
+	
+}
+
+
+
